@@ -49,13 +49,18 @@ namespace UserMaintenance
                 foreach (var l in users)
                 {
                     sw.Write(l.FullName);
-                    sw.WriKte(";");
+                    sw.Write(";");
                     sw.Write(l.ID);
                     sw.WriteLine(";");
 
                 }  
                 
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            users.Remove((User)listUsers.SelectedItem);
         }
     }
   
